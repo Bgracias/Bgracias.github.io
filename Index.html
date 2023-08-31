@@ -4,7 +4,18 @@
         var val = e.value;
         container.setAttribute("style", "filter: brightness(" + val + "%);");
     }
+    function GetHour() {
+        var now = new Date();
+        return now.GetHours();
+    }
+    function InitializeTimer() {
+        // repeat with the interval of 5 seconds
+        let timerId = setInterval(() => alert('tick'), 5000);
 
+        // after 25 seconds stop
+        setTimeout(() => { clearInterval(timerId); alert('stop'); }, 25000);
+
+    }
 </script>
 <style>
     body {
@@ -53,7 +64,7 @@
 <title>Change Brightness using Range Slider</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="InitializeTimer();">
   <div id="container">
     <div class="main">
       <input type="range" id="brightness-range" min="10" max="100" value="100" onchange="fun(this)">
