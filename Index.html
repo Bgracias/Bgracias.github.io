@@ -1,11 +1,11 @@
 <script>
     function fun(e) {
-        var container = document.getElementById('container');
+        var container = document.getElementById('brightness-range');
         var val = e.value;
         container.setAttribute("style", "filter: brightness(" + val + "%);");
     }
     function setBrightness() {
-        var container = document.getElementById('container');
+        var container = document.getElementById('brightness-range');
         var val = getBrightnessPercent();
         container.setAttribute("style", "filter: brightness(" + val + "%);");
     }
