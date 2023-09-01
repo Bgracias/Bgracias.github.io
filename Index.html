@@ -11,6 +11,7 @@
     }
     function getBrightnessPercent() {
         var val = getHour();
+        
         if (val > 6 && val < 7) {
             return 10;
         }
@@ -49,8 +50,8 @@
     }
     function InitializeTimer() {
         // repeat with the interval of 5 seconds
-        let timerId = setInterval(() => setBrightness(), 1000 * (60*60));
-        //let timerId = setInterval(() => setBrightness(), 5000 );
+        //let timerId = setInterval(() => setBrightness(), 1000 * (60*60));
+        let timerId = setInterval(() => setBrightness(), 5000 );
 
         // after 25 seconds stop
         //setTimeout(() => { clearInterval(timerId); alert('stop'); }, 25000);
