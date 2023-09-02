@@ -1,11 +1,11 @@
 <script>
     function fun(e) {
-        var container = document.getElementById('brightness-range');
+        var container = document.getElementById('bannerImage');
         var val = e.value;
         container.setAttribute("style", "filter: brightness(" + val + "%);");
     }
     function setBrightness() {
-        var container = document.getElementById('brightness-range');
+        var container = document.getElementById('bannerImage');
         var val = getBrightnessPercent();
         container.setAttribute("style", "filter: brightness(" + val + "%);");
     }
@@ -119,11 +119,11 @@
 <body onload="InitializeTimer();" >
   <!--<div id="container">-->
       
- <img src="https://bgracias.github.io/lake.jpg" alt="logo" id="brightness-range" min="1" max="100" value="20">
+ <img src="https://bgracias.github.io/lake.jpg" alt="logo" id="bannerImage" min="1" max="100" value="20">
       
     <!--<img alt="somepic" style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);" src="https://github.com/Bgracias/Bgracias.github.io/blob/6054b4481b725858355a41d03e4bb737d272d0be/moutainlake.gif">
       -->
-          <!--<input type="range" id="brightness-range" min="1" max="100" value="20" onchange="fun(this)">-->
+          <!--<input type="range" id="bannerImage" min="1" max="100" value="20" onchange="fun(this)">-->
      
   <!--</div>-->
 </body>    
