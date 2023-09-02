@@ -13,33 +13,43 @@
         var val = getHour();
         
         if (val > 6 && val < 7) {
+            document.getElementById("bannerImage").src = "https://bgracias.github.io/sunrisepool.jpg"; 
             return 10;
         }
         else if (val > 7 && val < 8) {
+            document.getElementById("bannerImage").src = "https://bgracias.github.io/latemorning.jpg"; 
             return 30;
         }
         else if (val > 8 && val < 10) {
+            document.getElementById("bannerImage").src = "https://bgracias.github.io/latemorning.jpg"; 
             return 60;
         }
         else  if(val > 10 && val < 17) {
-            return 100;
+            document.getElementById("bannerImage").src = "https://bgracias.github.io/underwater.gif"; 
+               return 100;
         }
         else if (val > 17 && val < 18) {
+            document.getElementById("bannerImage").src = "https://bgracias.github.io/ocean.gif"; 
             return 70;
         }
         else if (val > 18 && val < 21) {
+            document.getElementById("bannerImage").src = "https://bgracias.github.io/nightriver.jpg"; 
             return 50;
         }
         else if (val > 21 && val < 22) {
+            document.getElementById("bannerImage").src = "https://bgracias.github.io/night.jpg"; 
             return 25;
         }
         else if (val > 22 && val < 24) {
+            document.getElementById("bannerImage").src = "https://bgracias.github.io/moon.gif"; 
             return 10;
         }
         else if (val > 1 && val < 5) {
+            document.getElementById("bannerImage").src = "https://bgracias.github.io/mountainlakerednight.jpg"; 
             return 1;
         }
         else if (val > 5 && val < 6) {
+            document.getElementById("bannerImage").src = "https://bgracias.github.io/moon.gif"; 
             return 5;
         }
        
@@ -109,7 +119,7 @@
 <body onload="InitializeTimer();" >
   <!--<div id="container">-->
       
- <img src="https://bgracias.github.io/moutainlake.gif" alt="logo" id="brightness-range" min="1" max="100" value="20">
+ <img src="https://bgracias.github.io/lake.jpg" alt="logo" id="brightness-range" min="1" max="100" value="20">
       
     <!--<img alt="somepic" style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);" src="https://github.com/Bgracias/Bgracias.github.io/blob/6054b4481b725858355a41d03e4bb737d272d0be/moutainlake.gif">
       -->
