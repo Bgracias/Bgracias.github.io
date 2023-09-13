@@ -11,7 +11,7 @@
     }
     function getBrightnessPercent() {
         var val = getHour();
-        document.getElementById("theHour").innerHtml=val;
+        document.getElementById("theHour").innerHTML=val;
         if (val >= 6 && val < 7) {
             document.getElementById("bannerImage").style.backgroundImage = 'url("https://bgracias.github.io/sunrisepool.jpg")'; 
             return 20;
