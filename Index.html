@@ -11,7 +11,7 @@
     }
     function getBrightnessPercent() {
         var val = getHour();
-        
+        alert(val);
         if (val >= 6 && val < 7) {
             document.getElementById("bannerImage").src = "https://bgracias.github.io/sunrisepool.jpg"; 
             return 20;
@@ -93,7 +93,7 @@
     function InitializeTimer() {
         setBrightness();
         // repeat with the interval of 5 seconds
-        let timerId = setInterval(() => setBrightness(), 1000 * (60*60));
+        let timerId = setInterval(() => setBrightness(), 1000 * (6*6));
         //let timerId = setInterval(() => setBrightness(), 5000 );
 
         // after 25 seconds stop
